@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar vuelo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form action="{{ url_for('mockup6')}}">
+
+        <center>
+
+            <table border>
+                <caption>Reservar vuelo</caption>                
+                <colgroup>
+                    <col class="column1">
+                    <col class="colums2plus3" span="2">
+                </colgroup>
+        
+                <tr>
+                    <th>Vuelo</th>
+                    <th>Base</th>
+                    <th>Mediun</th>
+                    <th>Full</th>
+                </tr>
+                <tr>
+                    <td>
+                        <table border width="100%">
+                            <tr>
+                                <td>05:50am Bogota <br>  07:20am Barranquilla </td>
+                                <td>Viva Air <br> Directo </td>
+                            </tr>
+                        </table>
+                    </td>
+                    
+                    <td>
+                        <input type="radio" name="vuelo">500.000
+                    </td>
+                    <td>
+                        <input type="radio" name="vuelo">600.000
+                    </td>
+                    <td>
+                        <input type="radio" name="vuelo">800.000
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table border width="100%">
+                            <tr>
+                                <td>10:15am Bogota <br> 10:50am Medellin</td>
+                                <td>Viva Air <br> Directo </td>
+                            </tr>
+                        </table>
+                    </td>
+                   
+                    <td>
+                        <input type="radio" name="vuelo">550.000
+                    </td>
+                    <td>
+                        <input type="radio" name="vuelo">600.000
+                    </td>
+                    <td>
+                        <input type="radio" name="vuelo">850.000
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table border width="100%">
+                            <tr>
+                                <td>10:15am Bogota <br> 11:20am Panama</td>
+                                <td>Viva Air <br> Directo </td>
+                            </tr>
+                        </table>
+                    </td>
+                    
+                    <td>
+                        <input type="radio" name="vuelo">750.000
+                    </td>
+                    <td>
+                        <input type="radio" name="vuelo">900.000
+                    </td>
+                    <td>
+                        <input type="radio" name="vuelo">1.000.000
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+            <center><button>Agregar vuelo</button></center>
+            
+
+        </center>
+
+    </form>
+
+</body>
+</html>

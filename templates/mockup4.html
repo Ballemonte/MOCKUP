@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda Vuelo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <form action="{{ url_for('mockup4')}}">
+        <h1>Tipo de busqueda</h1>
+        <p> 
+            <input type="radio" name="busquedavuelo"  value="numero">Numero de Vuelo
+            <input type="radio" name="busquedavuelo"  value="ruta">Ruta
+        </p>
+
+        <fieldset>
+            <legend>Numero vuelo</legend>
+
+            <p>Numero de vuelo: <input type="text" name=numvuelo> </p>
+
+        <p>Fecha: 
+            <input type="date" id="start" name="trip-start"
+                   value="2021-10-10"
+                   min="1920-01-01" max="2021-12-31">
+        </p>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Ruta</legend>
+            <p>Origen: <select name="origen" id="origen">
+                <option value="bogota">Bogota</option>
+                <option value="medellin">Medellin</option>
+                <option value="cali">Cali</option>
+                <option value="villao">Villavicencio</option>
+                <option value="barranquilla">Barranquilla</option>
+            </select> </p>
+
+            <p>Destino: <select name="destino" id="destino">
+                <option value="bogota">Bogota</option>
+                <option value="medellin">Medellin</option>
+                <option value="cali">Cali</option>
+                <option value="villao">Villavicencio</option>
+                <option value="barranquilla">Barranquilla</option>
+            </select> </p>
+
+            <p>Fecha: 
+                <input type="date" id="start" name="trip-start"
+                       value="2021-10-10"
+                       min="1920-01-01" max="2021-12-31">
+
+        </fieldset>
+        <br>
+        <button>Ver estado del vuelo</button>
+        
+
+    </form>
+    
+</body>
+</html>

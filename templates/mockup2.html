@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <form action="{{ url_for('mockup2')}}" 
+          method="POST" 
+          name="crearcuenta">
+        <h1>Crear cuenta</h1>
+        <div class="input-radio">
+        <label for="document">Tipo de documento:</label>
+        <select class="form-select" id="document" name="document">
+            <option value="cedula">Cedula Ciudadania</option>
+            <option value="di">Documento de Identidad</option>
+            <option value="cedulaextrangera">Cedula Extranjera</option>
+            <option value="pasaporte">Pasaporte</option>
+        </select>
+        </div>
+
+        <p>Numero de documento: <input type="text" id="numero_documento" name="numero_documento"> </p>
+        <p>Nombre: <input type="text" id="nombre" name="name"> </p>
+        <p>Apellido: <input type="text" id="apellido" name="apellido"> </p>
+        <p>Fecha de nacimiento: 
+        <input type="date" id="start" name="trip-start"
+               value="2018-07-22"
+               min="1920-01-01" max="2021-12-31">
+        </p>
+        <p>
+            Genero: <input type="radio" id="genero" name="genero" value="m" /> Masculino
+            <input type="radio" name="sexo" id="sexo" value="f" /> Femenino
+        </p>
+        <p>Telefono: <input type="int" id="telefono" name="telefono" > </p>
+
+        <h2> Datos de ingreso a tu cuenta </h2>
+        <p>Correo: <input type="text" id="correo" name="correo" maxlength="100" /> </p>
+        <p>Contraseña: <input type="password" id="contraseña" name="contraseña"> </p>
+
+        <p>
+            <input type="checkbox" name="condiciones" /> Declaro haber leido y
+            acepto los terminos y condiciones
+        </p>
+
+        <button>Crear cuenta</button>
+
+    </form>
+</body>
+</html>
